@@ -1,6 +1,16 @@
 # react-hooks-example
 An experiment in hooks!
 
-## State Hook
+Install the ESLint plugin for hooks:
+`npm install eslint-plugin-react-hooks --save-dev`
 
-## Effect Hook
+## State Hooks
+
+## Effect Hooks
+
+## Custom Hooks
+
+## Unit Testing
+
+## Further Reading
+* https://reactjs.org/docs/hooks-intro.html
