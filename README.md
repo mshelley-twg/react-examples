@@ -13,15 +13,15 @@ To view all examples in development mode:
 * Run `npm start` from the root project folder
 * Open [http://localhost:3000](http://localhost:3000)
 
-To view the source code, `cd` into `/src/<example>` e.g. `/src/hooks`.
+To view the source code, `cd` into `/src/<example>`, e.g. `/src/hooks`.
 
 ## Examples
 
 ### Hooks
-Hooks allow you to "hook into" React's state and lifecycle features from function components without using class components.
+Hooks allow you to "hook into" React's state and lifecycle features from function components.
 
-* **State Hooks:** Add local state to a function component.
-* **Effect Hooks:** Add side effects to a function component.
+* **State Hooks:** Add local state to a function component
+* **Effect Hooks:** Add side effects to a function component
 
 #### Further Reading
 * [Introducing Hooks - React](https://reactjs.org/docs/hooks-intro.html)
