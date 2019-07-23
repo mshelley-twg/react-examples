@@ -2,7 +2,7 @@ import { createContext } from 'react'
 
 export const themes = {
   light: {
-    example: {
+    section: {
       background: '#ffffff'
     },
     header: {
@@ -14,7 +14,7 @@ export const themes = {
     }
   },
   dark: {
-    example: {
+    section: {
       background: '#000033'
     },
     header: {

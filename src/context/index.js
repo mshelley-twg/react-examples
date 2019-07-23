@@ -9,6 +9,22 @@ const ThemeButton = ({ children, onClick }) => (
   </ThemeContext.Consumer>
 )
 
+const ThemeHeader = ({ children }) => (
+  <ThemeContext.Consumer>
+    {theme => (
+      <h2 style={theme.header}>{children}</h2>
+    )}
+  </ThemeContext.Consumer>
+)
+
+const ThemeSection = ({ children }) => (
+  <ThemeContext.Consumer>
+    {theme => (
+      <section style={theme.section}>{children}</section>
+    )}
+  </ThemeContext.Consumer>
+)
+
 function ContextExample () {
   const [theme, setTheme] = useState(themes.light)
 
@@ -18,14 +34,10 @@ function ContextExample () {
 
   return (
     <ThemeContext.Provider value={theme}>
-      <ThemeContext.Consumer>
-        {theme => (
-          <section style={theme.example}>
-            <h2 style={theme.header}>Context</h2>
-            <ThemeButton onClick={toggleTheme}>Toggle Theme</ThemeButton>
-          </section>
-        )}
-      </ThemeContext.Consumer>
+      <ThemeSection>
+        <ThemeHeader>Context</ThemeHeader>
+        <ThemeButton onClick={toggleTheme}>Toggle Theme</ThemeButton>
+      </ThemeSection>
     </ThemeContext.Provider>
   )
 }
