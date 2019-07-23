@@ -1,6 +1,11 @@
 # React Examples
 Wherein we explore new features of React!
 
+## Installation
+* Clone the repo
+* `cd` into the root project folder
+* `npm install`
+
 ## Viewing Examples
 To view all examples in development mode:
 * Run `npm start`
