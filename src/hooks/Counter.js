@@ -6,8 +6,8 @@ const Counter = () => {
   return (
     <section>
       <h3>Counter: {value}</h3>
-      <button onClick={() => setValue(currentValue => currentValue + 1)}>Increment</button>
-      <button onClick={() => setValue(currentValue => currentValue - 1)}>Decrement</button>
+      <button onClick={() => setValue(currentValue => currentValue + 1)}>+</button>
+      <button onClick={() => setValue(currentValue => currentValue - 1)}>-</button>
     </section>
   )
 }
