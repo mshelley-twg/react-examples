@@ -27,4 +27,8 @@ export const themes = {
   }
 }
 
-export const ThemeContext = createContext(themes.light)
+export const ThemeContext = createContext({
+  theme: themes.light,
+  // To be provided with ThemeContext.Provider
+  toggleTheme: () => {}
+})

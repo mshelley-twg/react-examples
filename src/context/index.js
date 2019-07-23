@@ -1,26 +1,34 @@
 import React, { useState } from 'react'
 import { ThemeContext, themes } from './theme-context'
 
-const ThemeButton = ({ children, onClick }) => (
+const ThemeSection = ({ children }) => (
   <ThemeContext.Consumer>
-    {theme => (
-      <button style={theme.button} onClick={onClick}>{children}</button>
+    {({ theme }) => (
+      <section style={theme.section}>{children}</section>
     )}
   </ThemeContext.Consumer>
 )
 
 const ThemeHeader = ({ children }) => (
   <ThemeContext.Consumer>
-    {theme => (
+    {({ theme }) => (
       <h2 style={theme.header}>{children}</h2>
     )}
   </ThemeContext.Consumer>
 )
 
-const ThemeSection = ({ children }) => (
+const ThemeButton = ({ children, onClick }) => (
   <ThemeContext.Consumer>
-    {theme => (
-      <section style={theme.section}>{children}</section>
+    {({ theme }) => (
+      <button style={theme.button} onClick={onClick}>{children}</button>
+    )}
+  </ThemeContext.Consumer>
+)
+
+const ToggleThemeButton = () => (
+  <ThemeContext.Consumer>
+    {({ toggleTheme }) => (
+      <ThemeButton onClick={toggleTheme}>Toggle Day / Night Theme</ThemeButton>
     )}
   </ThemeContext.Consumer>
 )
@@ -33,10 +41,10 @@ function ContextExample () {
   }
 
   return (
-    <ThemeContext.Provider value={theme}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <ThemeSection>
         <ThemeHeader>Context</ThemeHeader>
-        <ThemeButton onClick={toggleTheme}>Toggle Theme</ThemeButton>
+        <ToggleThemeButton />
       </ThemeSection>
     </ThemeContext.Provider>
   )
