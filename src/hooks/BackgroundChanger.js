@@ -21,7 +21,7 @@ const BackgroundChanger = () => {
 
   return (
     <section>
-      <h2>Change Background</h2>
+      <h3>Change Background</h3>
       <BackgroundButton background='#ffffff' setBackground={setBackground}>White</BackgroundButton>
       <BackgroundButton background='#000000' setBackground={setBackground}>Black</BackgroundButton>
       <BackgroundButton background='#ff0000' setBackground={setBackground}>Red</BackgroundButton>

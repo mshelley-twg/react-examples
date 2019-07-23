@@ -1,12 +1,11 @@
 import React from 'react'
-import BackgroundChanger from './BackgroundChanger'
-import Counter from './Counter'
+import HooksExample from './hooks'
 
 function App () {
   return (
     <main>
-      <Counter />
-      <BackgroundChanger />
+      <h1>React Examples</h1>
+      <HooksExample />
     </main>
   )
 }

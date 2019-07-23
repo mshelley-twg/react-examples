@@ -5,7 +5,7 @@ const Counter = () => {
 
   return (
     <section>
-      <h2>Counter: {value}</h2>
+      <h3>Counter: {value}</h3>
       <button onClick={() => setValue(currentValue => currentValue + 1)}>Increment</button>
       <button onClick={() => setValue(currentValue => currentValue - 1)}>Decrement</button>
     </section>
