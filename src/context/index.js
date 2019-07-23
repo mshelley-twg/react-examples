@@ -28,7 +28,7 @@ const Button = ({ children, onClick }) => (
 const ToggleThemeButton = () => (
   <ThemeContext.Consumer>
     {({ toggleTheme }) => (
-      <Button onClick={toggleTheme}>Toggle Day / Night Theme</Button>
+      <Button onClick={toggleTheme}>Toggle Theme</Button>
     )}
   </ThemeContext.Consumer>
 )

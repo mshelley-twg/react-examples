@@ -1,5 +1,5 @@
 import React from 'react'
-import BackgroundChanger from './BackgroundChanger'
+import ChangeBackground from './ChangeBackground'
 import Counter from './Counter'
 
 function HooksExample () {
@@ -7,7 +7,7 @@ function HooksExample () {
     <section>
       <h2>Hooks</h2>
       <Counter />
-      <BackgroundChanger />
+      <ChangeBackground />
     </section>
   )
 }
