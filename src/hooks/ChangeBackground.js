@@ -11,6 +11,18 @@ const SetBackgroundButton = ({ background, children, setBackground }) => {
 const ChangeBackground = () => {
   const [background, setBackground] = useState(DEFAULT_BACKGROUND)
 
+  /**
+   * With useEffect(), we run a side effect after every render if any
+   * of the variables in the second parameter have changed. In this
+   * case, we run the side effect whenever background changes.
+   *
+   * Notice that we return a function in useEffect(). This function will
+   * be called when the component is unmounted to undo the side effect.
+   * (Technically, this method can also fire after every render as well.)
+   *
+   * For more details:
+   * https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup
+   */
   useEffect(() => {
     document.body.style.background = background
 
