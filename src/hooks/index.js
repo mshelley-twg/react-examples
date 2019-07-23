@@ -5,7 +5,7 @@ import Counter from './Counter'
 function HooksExample () {
   return (
     <section>
-      <h2>React Hooks</h2>
+      <h2>Hooks</h2>
       <Counter />
       <BackgroundChanger />
     </section>
